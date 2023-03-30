@@ -95,47 +95,16 @@
 						<article id="skill">
 							<h2 class="major">Skills</h2>									
 							<span class="image main"><img src="images/tools.jpg" alt="" /></span>
-							<!-- <div id="wordcloud"></div>
-							<script>
-								var words = [
-									{word: "love", size: 50},
-									{word: "happiness", size: 30},
-									{word: "peace", size: 25},
-									{word: "family", size: 20},
-									{word: "success", size: 18},
-									{word: "health", size: 15},
-									{word: "friends", size: 12},
-									{word: "money", size: 10},
-									{word: "hope", size: 8},
-									{word: "joy", size: 5}
-								];
-								d3.layout.cloud().size([600, 400])
-									.words(words)
-									.padding(5)
-									.rotate(function() { return ~~(Math.random() * 2) * 90; })
-									.font("Impact")
-									.fontSize(function(d) { return d.size; })
-									.on("end", draw)
-									.start();
-									function draw(words) {
-										d3.select("#wordcloud")
-											.append("svg")
-											.attr("width", 600)
-											.attr("height", 400)
-											.append("g")
-											.attr("transform", "translate(300,200)")
-											.selectAll("text")
-											.data(words)
-											.enter().append("text")
-											.style("font-size", function(d) { return d.size + "px"; })
-											.style("font-family", "Impact")
-											.style("fill", function(d, i) { return d3.schemeCategory10[i % 10]; })
-											.attr("text-anchor", "middle")
-											.attr("transform", function(d) { return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")"; })
-											.text(function(d) { return d.word; });	
-										}
-								</script>  -->
-	
+							<!-- <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js">
+								var data = ["the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"];
+								
+								var cloud = new WordCloud(document.getElementById("cloud"));
+								cloud.data(data)
+									   .size(200)
+									   .font("Arial", 18, "white");
+								cloud.draw();
+							</script>
+							<div id="cloud"></div> -->
 							<li>Statistical Methods: Regression, Correlation, A/B(Hypotheses) Testing, Clustering and Classification Methods, Time-series Analysis</li>
 							<li>Machine Learning: Supervised Learning, Unsupervised Learning, Classification, Time Series, Linear & Logistic Regression, Advance Statistical Analysis, Decision Trees, KNN, Random Forest, K-Means Clustering</li>
 							<li>Programming Languages: Python, SQL, R, MATLAB, STATA, MS Excel</li>
